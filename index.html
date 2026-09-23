@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,12 +53,20 @@
         }
     </style>
     <link href="./s1.css" rel="stylesheet">
-</head>
 
+    <!-- 内嵌式 JavaScript：script标签写在html内 -->
+    <script>
+        console.log("===== 内嵌式JS 执行 =====");
+        let msg = "简历页面加载完成";
+        console.log(msg);
+    </script>
+
+    <!-- 外链式 JavaScript：引入外部js文件 -->
+    <script src="./j1.js"></script>
+</head>
 <body>
     <h1>个人简历</h1>
     <hr>
-
     <h2>基本信息</h2>
     <p class="info-item">姓名：唐小洁</p>
     <p class="info-item">性别：女</p>
@@ -67,19 +74,17 @@
     <p class="info-item">出生日期：2007年7月10日</p>
     <p class="info-item">在读学校：广东科学技术职业学院</p>
 
-    <div class="split-line"></div>
+    <!-- ✅ 行内式JS：写在标签onclick属性里 -->
+    <input type="button" value="点击查看提示" onclick="alert('行内JS：欢迎查看简历！')">
 
+    <div class="split-line"></div>
     <h2>联系信息</h2>
     <p class="info-item">联系电话：17266331741</p>
     <p class="info-item">电子邮箱：822240085@qq.com</p>
-
     <div class="split-line"></div>
-
     <h2>自我评价</h2>
     <div class="intro-box">
         认真学习专业知识，态度端正，待人真诚。积极参与团委活动，不断提升自我综合能力，对待工作细心负责，愿意学习新知识，勇于接受挑战。
     </div>
-
 </body>
-
 </html>
